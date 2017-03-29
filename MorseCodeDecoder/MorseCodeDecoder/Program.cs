@@ -10,13 +10,13 @@ namespace MorseCodeDecoder
     class Program
     {
         static void Main(string[] args)
-        {   
+        {
             var path = "morse.csv";
             Dictionary<string, string> morsecodedictionary = new Dictionary<string, string>();
 
             using (var reader = new StreamReader(path))
             {
-                
+
                 while (reader.Peek() > -1)
                 {
                     var code = reader.ReadLine();
@@ -28,13 +28,34 @@ namespace MorseCodeDecoder
                 }
 
             }
-            Console.WriteLine("Enter your message here.");
-            var input=Console.ReadLine().ToUpper();
-            foreach (var letter in input)
-            {
-                Console.WriteLine(morsecodedictionary[letter.ToString()]);
-            }
+            var translating = true;
+            while (translating)
+                {
+                Console.WriteLine("Enter your message here.");
+                var input = Console.ReadLine().ToUpper();
+                var userMorse = String.Empty;
+                foreach (var letter in input)
+                {
+                    var temp = morsecodedictionary[letter.ToString()];
+                    userMorse += temp;
+                    Console.WriteLine(temp);
+                }
 
+                // input, userMorse
+                using (StreamWriter sw = File.AppendText("output.csv"))
+                {
+                    sw.WriteLine($"{input},{userMorse}");
+                }
+                Console.WriteLine("Would you like to continue? [y/n]");
+                var answer = Console.ReadLine();
+                if (answer == "n")
+                {
+                    translating = false;
+                }
+
+            }
         }
+
     }
+
 }
