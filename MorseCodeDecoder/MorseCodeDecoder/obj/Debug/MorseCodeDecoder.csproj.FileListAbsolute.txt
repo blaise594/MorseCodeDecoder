@@ -1,0 +1,6 @@
+C:\Users\Danny\tiy\week-3\day-3\MorseCodeDecoder\MorseCodeDecoder\bin\Debug\MorseCodeDecoder.exe.config
+C:\Users\Danny\tiy\week-3\day-3\MorseCodeDecoder\MorseCodeDecoder\bin\Debug\MorseCodeDecoder.exe
+C:\Users\Danny\tiy\week-3\day-3\MorseCodeDecoder\MorseCodeDecoder\bin\Debug\MorseCodeDecoder.pdb
+C:\Users\Danny\tiy\week-3\day-3\MorseCodeDecoder\MorseCodeDecoder\obj\Debug\MorseCodeDecoder.csprojResolveAssemblyReference.cache
+C:\Users\Danny\tiy\week-3\day-3\MorseCodeDecoder\MorseCodeDecoder\obj\Debug\MorseCodeDecoder.exe
+C:\Users\Danny\tiy\week-3\day-3\MorseCodeDecoder\MorseCodeDecoder\obj\Debug\MorseCodeDecoder.pdb
